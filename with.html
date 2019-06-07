@@ -13,11 +13,10 @@
   <script>
   (function(w) {
     w.__PMISRC__ = "https://projectmap.it/project-map-it-users";
-    var script = document.createElement('script');
-    var ss = document.getElementsByTagName('body')[0];
-    script.defer = true;
-    script.src = "https://projectmap.it/static/js/embed.js";
-    setTimeout(function() { ss.appendChild(script); }, 100);
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = "https://projectmap.it/static/js/embed.js";
+    setTimeout(function() { document.head.appendChild(s); }, 1);
   })(window);
   </script>
   <div id="__pmiembed"></div>
