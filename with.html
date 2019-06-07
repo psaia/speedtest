@@ -16,7 +16,11 @@
     var s = document.createElement('script');
     s.defer = true;
     s.src = "https://projectmap.it/static/js/embed.js";
-    setTimeout(function() { document.head.appendChild(s); }, 200);
+    setTimeout(function() {
+      setTimeout(function() {
+        document.head.appendChild(s);
+      }, 100);
+    }, 1);
   })(window);
   </script>
   <div id="__pmiembed"></div>
