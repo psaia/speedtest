@@ -14,10 +14,10 @@
   (function(w) {
     w.__PMISRC__ = "https://projectmap.it/project-map-it-users";
     var script = document.createElement('script');
-    var scripts = document.getElementsByTagName('script')[0];
+    var ss = document.getElementsByTagName('body')[0];
     script.defer = true;
     script.src = "https://projectmap.it/static/js/embed.js";
-    scripts.parentNode.insertBefore(script, scripts);
+    setTimeout(function() { ss.appendChild(script); }, 100);
   })(window);
   </script>
   <div id="__pmiembed"></div>
